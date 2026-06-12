@@ -15,6 +15,14 @@ run/main_scene="res://scenes/levels/game.tscn"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://assets/icon.svg"
 
+[audio]
+
+buses/default_bus_layout="uid://b3fvwx21huikq"
+
+[autoload]
+
+Bgm="*uid://pp1j0x8hlt5a"
+
 [input]
 
 jump={
