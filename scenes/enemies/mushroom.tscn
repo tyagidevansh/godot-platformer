@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dco57pmcbib06"]
+
+[ext_resource type="Texture2D" uid="uid://b3u1o7e7a0hjo" path="res://assets/sprites/world_tileset.png" id="1_2wybx"]
+[ext_resource type="PackedScene" uid="uid://smm1c57iy4ku" path="res://scenes/world/killzone.tscn" id="2_uk2no"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1calh"]
+size = Vector2(10, 11)
+
+[node name="Mushroom" type="Node2D" unique_id=2131348089]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=710768347]
+texture = ExtResource("1_2wybx")
+region_enabled = true
+region_rect = Rect2(128.74019, 116.55965, 15.634949, 12.239929)
+
+[node name="Killzone" parent="." unique_id=122956494 instance=ExtResource("2_uk2no")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=146719488]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_1calh")
